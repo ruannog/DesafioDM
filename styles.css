@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('carros7032.jpg'); 
+    background-size: cover;
+    color: #25d366;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+.logo img {
+    max-width: 200px; /* Ajustar */
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+nav {
+    margin-bottom: 30px;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links li {
+    display: flex;
+    align-items: center;
+}
+
+.social-links img {
+    width: 24px;
+    margin-right: 8px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease,background-color 0.3s ease;
+}
+
+.whatsapp-button {
+    background-color: #25d366;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.whatsapp-button img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.address-button, .catalog-button {
+    background-color: #333;
+    color: white;
+    
+}
+
+.address-button:hover, .catalog-button:hover {
+    background-color: #555;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .button-container {
+        flex-direction: row;
+    }
+}
+button:hover {
+    transform: scale(1.05); 
+}
+.whatsapp-button:hover {
+    background-color: #20c15c;
+}
